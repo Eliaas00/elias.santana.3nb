@@ -92,8 +92,13 @@ mod bst_tests {
     }
 }
 
-fn main() {
+pub fn main() {
     let mut bst = BST::new();
+
+    if bst.is_empty() {
+        println!("A árvore está vazia.");
+    }
+    
     bst.insert(10);
     bst.insert(27);
     bst.insert(23);
